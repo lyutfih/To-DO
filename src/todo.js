@@ -7,5 +7,5 @@ const addTask = (e) => {
     e.trim() === '' ? vanillaToast.warning('Task name can not be empty!', {duration:300, fadeDuration:1})
     : vanillaToast.success('Task added successfuly!', {duration:300, fadeDuration:1})
 }
-
 addTaskForm.addEventListener('submit', addTask)
+
