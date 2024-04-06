@@ -5,11 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
     <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body class="bg-slate-950 text-white m-0 p-0 flex justify-center items-center h-screen">
-    <div class="app bg-slate-900 p-5 flex flex-col justify-center min-w-96 text-center">
-        <h1 class="text-lg font-bold mb-5">To-Do List</h1>
-        <input type="text" placeholder="Add To-Do">
+<body class="bg-brand-50 text-white m-0 p-0 font-inter flex justify-center items-center h-screen max-sm:p-5">
+    <div class="app bg-brand-400 p-5 flex flex-col justify-center min-w-[28rem] max-w-[54rem] text-center rounded-lg shadow-2xl">
+        <h1 class="text-3xl font-bold mb-5">To-Do List</h1>
+        <div class="add-todo flex justify-center">
+            <form id="add-task-form">
+                <input class="border-none py-2 pl-5 pr-20 text-base text-brand-900 rounded-full mr-[-5rem]" id="add-task-input" type="text" placeholder="Add To-Do">
+                <button class="bg-brand-800 text-base rounded-full px-10 py-2 hover:bg-brand-300 transition-all">Add</button>
+            </form>   
+        </div>
+        <h2 class="pt-5 text-xl">Tasks</h2>
+        <div class="tasks flex flex-col pt-5 max-h-[36rem] overflow-y-auto">
+            <div class="task bg-brand-700 py-3 px-5 flex justify-between rounded-lg items-center mb-2 mr-2">
+                <span>
+                    <input type="checkbox" class="mr-1 border-none bg-brand-50" name="" id="">
+                    Task #1</span>
+                <button class="bg-red-500 py-0.5 px-2 rounded-lg hover:bg-red-800 transition-all"><i class="fa-solid fa-trash"></i></button>
+            </div>
+            
+        </div>
     </div>
     <script src="todo.js"></script>
 </body>
