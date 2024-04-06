@@ -22,3 +22,27 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+.task {
+    @apply bg-brand-700 py-3 px-5 flex justify-between rounded-lg items-center mb-2 mr-2;
+}
+
+.delete-button {
+    @apply bg-red-500 py-0.5 px-2 rounded-lg hover:bg-red-800 transition-all;
+}
+
+.update-button {
+    @apply bg-blue-500 py-0.5 px-2 rounded-lg hover:bg-blue-800 transition-all;
+}
+
+.update-input {
+    @apply mr-1 border-b-2 bg-brand-700 border-b-brand-200 transition-all focus:border-b-brand-50 focus:outline-none;
+}
+
+.completed {
+    @apply bg-brand-900 text-zinc-400;
+}
+
+.completed .update-input {
+    @apply bg-brand-900 border-b-brand-600;
+}
