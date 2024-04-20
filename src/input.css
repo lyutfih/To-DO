@@ -34,6 +34,9 @@
 .update-button {
     @apply bg-blue-500 py-0.5 px-2 rounded-lg hover:bg-blue-800 transition-all;
 }
+.update-button.active {
+    @apply bg-green-600 py-0.5 px-2 rounded-lg hover:bg-green-800 transition-all;
+}
 
 .update-input {
     @apply mr-1 border-b-2 bg-brand-700 border-b-brand-200 transition-all focus:border-b-brand-50 focus:outline-none;
@@ -45,4 +48,12 @@
 
 .completed .update-input {
     @apply bg-brand-900 border-b-brand-600;
+}
+
+.category {
+    @apply flex items-center justify-center bg-brand-300 rounded-full py-1 px-4 cursor-pointer hover:bg-brand-500 transition-all;
+}
+
+.category.active {
+    @apply bg-brand-600
 }
